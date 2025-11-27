@@ -11,26 +11,25 @@
             <nav>
                 <a href="index.html">Home</a> |
                 <a href="distros.html">Distros</a> |
-                <a href="systems.html">Systems</a> |
-                <a href="installing.html">Installing</a>
+                <a href="installing.html">Install</a>
             </nav>
         </header>
 
         <main>
             <section>
                 <h2>What is Rufus?</h2>
-                <p>Rufus is a free, open-source utility that helps you create bootable USB drives from ISO images on Windows. It is fast, reliable, and works with Linux, Windows, and other operating systems.</p>
+                <p>Rufus is a free, open-source utility that helps you create bootable USB drives from ISO images on Windows. It is fast, reliable, and works with every operating systems.</p>
                 <p><a href="https://rufus.ie/en/#download">Download Rufus</a></p>
             </section>
 
             <section>
                 <h2>What you'll need</h2>
                 <ul>
-                    <li>A computer running Windows or ask your computer nerd&#128521</li>
-                    <li>A USB drive (8 GB or larger recommended)</li>
-                    <li>The Linux distribution ISO file (e.g., Ubuntu, Linux Mint, Fedora)</li>
-                    <li>Rufus application downloaded and ready to use</li>
-                    <li>Reliable internet connection for downloading the ISO</li>
+                    <li>A computer running Windows</li>
+                    <li>A USB drive (8 GB or larger)</li>
+                    <li>The Linux distribution ISO file</li>
+                    <li>Rufus ready to use</li>
+                    <li>Internet connection</li>
                 </ul>
             </section>
 
@@ -41,19 +40,16 @@
                         See <a href="distros.html">our distros page</a> for popular options and links.
                         
                     </li>
-                    <li>Download the ISO file (usually 2–4 GB). The download page will offer a direct link or torrent.</li>
+                    <li>Download the ISO file (usually 2–4 GB). The download page will offer a direct link.</li>
                     <li>Save the ISO to a folder you can easily find (e.g., Downloads or Desktop).</li>
-                    <li>Verify the download completed successfully by checking the file size matches the website's expected size.</li>
                 </ol>
             </section>
 
             <section>
                 <h2>Step 2: Download and launch Rufus</h2>
                 <ol>
-                    <li>Go to <a href="https://rufus.ie/">rufus.ie</a>.</li>
-                    <li>Download the latest version of Rufus (portable executable). No installation needed — you can run it directly.</li>
-                    <li>Double-click <code>rufus.exe</code> to launch the application.</li>
-                    <li>If prompted by Windows User Account Control, click "Yes" to allow it to run.</li>
+                    <li>Go to <a href="https://rufus.ie/en/#download">rufus.ie</a>.</li>
+                    <li>Download the latest version of Rufus</li>
                 </ol>
             </section>
 
@@ -102,19 +98,10 @@
             </section>
 
             <section>
-                <h2>Step 7: Verify and wait for completion</h2>
-                <ol>
-                    <li>Once the progress bar reaches 100%, Rufus will perform a validation check.</li>
-                    <li>You may see "Ready" or a confirmation message when complete.</li>
-                    <li>Keep Rufus open or close it when done — the USB is now bootable.</li>
-                </ol>
-            </section>
-
-            <section>
-                <h2>Step 8: Boot from the USB and install Linux</h2>
+                <h2>Step 7: Boot from the USB and install Linux</h2>
                 <ol>
                     <li>Insert the bootable USB into the target computer.</li>
-                    <li>Restart the computer and enter the boot menu by pressing a key during startup (often F12, F2, ESC, or DEL — check your PC's brand).</li>
+                    <li>Restart the computer and enter the boot menu by pressing a key during startup (See <a href="bootkeys.html">our boot key page</a>.)</li>
                     <li>Select your USB drive from the boot menu.</li>
                     <li>The Linux live environment will load. You can now:
                         <ul>
@@ -125,17 +112,6 @@
                     <li>Follow the distro's installer prompts to choose language, timezone, disk partitioning, username, and password.</li>
                     <li>Once installation completes, remove the USB and reboot into your new Linux system.</li>
                 </ol>
-            </section>
-
-            <section>
-                <h2>Common issues and solutions</h2>
-                <ul>
-                    <li><strong>USB not detected:</strong> Try a different USB port or a different USB drive. Some USB 3 ports may not work; try USB 2 ports.</li>
-                    <li><strong>Boot menu not appearing:</strong> Check your computer's manual for the correct key to press (F12, F2, ESC, etc.). Press it repeatedly during startup.</li>
-                    <li><strong>Write failed:</strong> Close antivirus software temporarily, try a smaller or different USB drive, or use a different USB cable.</li>
-                    <li><strong>Slow USB:</strong> If writing is very slow, try a faster USB 3 drive or port.</li>
-                    <li><strong>Not booting from USB:</strong> In BIOS settings, ensure the USB drive is listed first in boot order, or enable "Boot from USB" explicitly.</li>
-                </ul>
             </section>
 
             <section>
@@ -172,8 +148,8 @@
         </main>
 
         <footer>
-            <p>Installation guide — back to <a href="index.html">home</a>. &copy; <span id="demo"></span></p>
+            <p>Installation guide — back to <a href="index.html">home</a>.</p>
+            <p>&copy; Tim Veldkamp 2025-<span id="CurrentYear"><script src="js/year.js"></script></span></p>
         </footer>
-        <script src="js/year.js"></script>
     </body>
 </html>
