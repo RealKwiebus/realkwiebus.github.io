@@ -123,3 +123,13 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+#rufus-img {
+    width: 350px;
+    height: auto;
+    float: right;
+    margin-top: -327px;
+    margin-right: -375px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}

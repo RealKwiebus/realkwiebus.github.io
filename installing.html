@@ -18,9 +18,18 @@
         <main>
             <section>
                 <h2>What is Rufus?</h2>
-                <img src="images/installer.svg" alt="Installation menu" style="width: 150px; height: 150px; float: right; margin: 0 0 1rem 1rem;">
                 <p>Rufus is a free, open-source utility that helps you create bootable USB drives from ISO images on Windows. It is fast, reliable, and works with Linux, Windows, and other operating systems.</p>
-                <p><a href="https://rufus.ie/en/#download">Download Rufus</a></p>
+            </section>
+
+            <section>
+                <h2>Tips before and while installing Linux</h2>
+                <ul>
+                    <li>Backup your important files before starting in case anything goes wrong.</li>
+                    <li>Use a USB 3 drive and port for faster write speeds.</li>
+                    <li>Test the live environment before installing to ensure hardware compatibility.</li>
+                    <li>Read your Linux distro's installation guide for specific steps and partitioning advice.</li>
+                    <li>During install, consider keeping Windows on the computer if dual-booting (the installer will help set this up).</li>
+                </ul>
             </section>
 
             <section>
@@ -41,7 +50,7 @@
                         See <a href="distros.html">our distros page</a> for popular options and links.
                         
                     </li>
-                    <li>Download the ISO file (usually 2–4 GB). The download page will offer a direct link.</li>
+                    <li>Download the ISO file. The download page will offer a direct link.</li>
                     <li>Save the ISO to a folder you can easily find (e.g., Downloads or Desktop).</li>
                 </ol>
             </section>
@@ -49,7 +58,7 @@
             <section>
                 <h2>Step 2: Download and launch Rufus</h2>
                 <ol>
-                    <li>Go to <a href="https://rufus.ie/en/#download">rufus.ie</a>.</li>
+                    <li>Go to <a href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11.exe">rufus.ie</a>.</li>
                     <li>Download the latest version of Rufus</li>
                 </ol>
             </section>
@@ -57,9 +66,9 @@
             <section>
                 <h2>Step 3: Insert USB drive and select it in Rufus</h2>
                 <ol>
-                    <li>Insert your USB drive into an available USB port.</li>
+                    <li>Insert your USB drive.</li>
                     <li>Open Rufus. It will likely auto-detect your USB drive in the "Device" dropdown at the top.</li>
-                    <li>Verify the correct USB drive is selected. Double-check the capacity shown matches your USB device.</li>
+                    <li>Verify the correct USB drive is selected.</li>
                     <li><strong>Warning:</strong> All data on the USB drive will be erased. Back up any important files first.</li>
                 </ol>
             </section>
@@ -68,22 +77,20 @@
                 <h2>Step 4: Select the ISO file</h2>
                 <ol>
                     <li>Click the <strong>SELECT</strong> button (or the disc icon) next to the "Boot selection" field.</li>
-                    <li>Browse to the Linux ISO file you downloaded earlier.</li>
-                    <li>Select the ISO and click <strong>Open</strong>.</li>
-                    <li>Rufus will display the ISO name and size in the selection field.</li>
+                    <li>Select the Linux ISO file you downloaded earlier.</li>
                 </ol>
             </section>
 
             <section>
                 <h2>Step 5: Configure Rufus settings</h2>
-                <p>The default settings work well for most installs. Here are some key options:</p>
+                <p>The default settings work well for most people. In case you get errors make sure that these settings are correct</p>
                 <ul>
                     <li><strong>Partition scheme:</strong> Leave as "MBR" unless your computer uses UEFI exclusively (modern PCs often do). For UEFI, select "GPT".</li>
                     <li><strong>Target system:</strong> If unsure, choose "BIOS or UEFI".</li>
                     <li><strong>File system:</strong> Leave as "FAT32" for compatibility.</li>
                     <li><strong>Quick format:</strong> Checked by default. Uncheck for a more thorough format (slower but safer).</li>
+                    <img id="rufus-img" src="images/rufus.webp" alt="Rufus">
                 </ul>
-                <p>Most users can leave these at default and proceed.</p>
             </section>
 
             <section>
@@ -100,13 +107,13 @@
             <section>
                 <h2>Step 7: Boot from the USB and install Linux</h2>
                 <ol>
-                    <li>Insert the bootable USB into the target computer.</li>
+                    <li>Insert the USB into the computer.</li>
                     <li>Restart the computer and enter the boot menu by pressing a key during startup (See <a href="bootkeys.html">our boot key page</a>.)</li>
                     <li>Select your USB drive from the boot menu.</li>
-                    <li>The Linux live environment will load. You can now:
+                    <li>The Linux live environment will load. Here you can:
                         <ul>
-                            <li><strong>Try it first:</strong> Run Linux directly from USB without installing (test drive).</li>
-                            <li><strong>Install:</strong> Click the install option to proceed with installation to your hard drive.</li>
+                            <li><strong>Test it:</strong> Run Linux directly from USB without installing (test drive).</li>
+                            <li><strong>Install:</strong> Click the install option to install it to your hard drive.</li>
                         </ul>
                     </li>
                     <li>Follow the distro's installer prompts to choose language, timezone, disk partitioning, username, and password.</li>
@@ -115,33 +122,16 @@
             </section>
 
             <section>
-                <h2>Tips for success</h2>
-                <ul>
-                    <li>Backup your important files before starting in case anything goes wrong.</li>
-                    <li>Use a USB 3 drive and port for faster write speeds.</li>
-                    <li>Test the live environment before installing to ensure hardware compatibility.</li>
-                    <li>Read your Linux distro's installation guide for specific steps and partitioning advice.</li>
-                    <li>During install, consider keeping Windows on the computer if dual-booting (the installer will help set this up).</li>
-                </ul>
-            </section>
-
-            <section>
                 <h2>Next steps</h2>
                 <p>After successful installation:</p>
                 <ul>
-                    <li>Update your system: <code>sudo apt update && sudo apt upgrade</code> (for Ubuntu/Debian)</li>
+                    <li>Update your system: <code>sudo apt update -y && sudo apt upgrade -y</code> (for Ubuntu/Debian based distro's)</li>
                     <li>Install essential tools and applications from your distro's package manager or app store.</li>
                     <li>Explore and customize your Linux pc.</li>
                     <li>Visit <a href="index.html">our home page</a> for more Linux tips and guides.</li>
                 </ul>
             </section>
 
-            <section>
-                <h2>Resources</h2>
-                <ul>
-                    <li><a href="https://rufus.ie/">Rufus — official site with FAQ</a></li>
-                </ul>
-            </section>
         </main>
 
         <footer>
