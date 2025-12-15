@@ -1,8 +1,3 @@
-<!--Notes to self:
-flexbox les 9
-classes and id's les 10
-
--->
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,26 +17,38 @@ classes and id's les 10
 
         <main>
             <p>There are hundreds of Linux distributions. Each one packages the Linux kernel with different collections of software, package managers, support policies, and goals. Below are some widely used distributions and where they fit best.</p>
-
+            <h2>I do not explain all Linux distros because there are way too many all with different features.</h2>
             <article>
                 <h2>Ubuntu</h2>
-                <p><a href="https://ubuntu.com/download/desktop">Official Ubuntu downloads</a></p>
-                <p>Ubuntu is user-friendly and well-supported, making it an excellent choice for newcomers. It uses the APT package manager and offers Long-Term Support (LTS) releases for stability.</p>
+                <p><a href="https://ubuntu.com/download/desktop">Download</a></p>
+                <p>Ubuntu is user-friendly and well-supported, making it an excellent choice for newcomers.</p>
                 <p>Good for: beginners, desktops, laptops, general-purpose use.</p>
+                <h1>Tips for Ubuntu:</h1>
+                    <ul>Package manager: APT</ul>
+                    <ul>Default Desktop: GNOME </ul>
+                    <ul>Recommended version: Ubuntu 25.10</ul>
             </article>
 
             <article>
                 <h2>Linux Mint</h2>
-                <p><a href="https://linuxmint.com/">Official Linux Mint</a></p>
+                <p><a href="https://linuxmint.com/download.php">Download</a></p>
                 <p>Linux Mint focuses on a familiar desktop experience and comes with multimedia codecs and helpful tools out of the box. It is based on Ubuntu (or Debian for some editions).</p>
-                <p>Good for: users migrating from Windows who want a comfortable desktop setup.</p>
+                <p>Good for: users transferring from Windows who want a comfortable desktop setup.</p>
+                <h1>Tips for Linux Mint</h1>
+                    <ul>Package manager: APT</ul>
+                    <ul>Default Desktop: GNOME</ul>
+                    <ul>Recommended version: 22.2 "Cinnamon"</ul>
             </article>
 
             <article>
                 <h2>Fedora</h2>
-                <p><a href="https://getfedora.org/">Official Fedora</a></p>
+                <p><a href="https://www.fedoraproject.org/workstation/download">Official Fedora</a></p>
                 <p>Fedora showcases newer technologies and upstream innovations. It has a quicker release cadence and is popular with developers and enthusiasts.</p>
                 <p>Good for: developers, cutting-edge desktops, contributors to upstream projects.</p>
+                <h1>Tips for Fedora</h1>
+                    <ul>Package manager: DNF</ul>
+                    <ul>Default Desktop: GNOME</ul>
+                    <ul>Recommended version: Fedora 43 Workstation</ul>
             </article>
 
             <article>
@@ -49,22 +56,29 @@ classes and id's les 10
                 <p><a href="https://www.debian.org/">Official Debian</a></p>
                 <p>Debian is the foundation for many distributions and emphasizes stability and freedom. It provides a large repository of packages and conservative updates.</p>
                 <p>Good for: servers, stable desktops, experienced users wanting control.</p>
+                <h1>Tips for Debian</h1>
+                    <ul>Package manager: APT</ul>
+                    <ul>Default Desktop: GNOME</ul>
+                    <ul>Recommended version: Newest (Just use the download button on the main page)</ul>
             </article>
 
             <article>
                 <h2>Arch Linux</h2>
-                <p><a href="https://archlinux.org/">Official Arch</a></p>
+                <p><a href="https://archlinux.org/download/#download-mirrors">Official Arch</a></p>
                 <p>Arch is lightweight and minimal by design, with a rolling-release model and powerful package manager (pacman). It requires manual setup but teaches how the system works.</p>
                 <p>Good for: advanced users, learning, highly-customised systems.</p>
+                <h1>Tips for Arch Linux</h1>
+                    <ul>Package manager: pacman</ul>
+                    <ul>Default Desktop: None (user choice)</ul>
+                    <ul>Recommended version: Rolling release (always up to date)</ul>
             </article>
 
             <section>
                 <h2>Choosing a distro</h2>
                 <ul>
                     <li>Beginners: Ubuntu, Linux Mint, or Fedora Workstation.</li>
-                    <li>Privacy/Control: Debian, Arch, or a privacy-focused distro.</li>
-                    <li>Lightweight needs: consider Lubuntu, Xubuntu, or lightweight spins.</li>
-                    <li>Servers: Debian, Ubuntu Server, CentOS Stream, or specialised server distros.</li>
+                    <li>Privacy/Control: Debian, Arch.</li>
+                    <li>Lightweight needs: consider Mint Xfce Edition, Lubuntu, or lightweight spins.</li> 
                 </ul>
             </section>
 
@@ -85,7 +99,7 @@ classes and id's les 10
         </main>
 
         <footer>
-            <p>Find more guides on the <a href="index.html">home page</a>. &copy; <span id="demo"></span></p>
+            <p>Find more guides on the <a href="index.html">home page</a>. &copy; <span id="CurrentYear"></span></p>
         </footer>
         <script src="js/year.js"></script>
     </body>
