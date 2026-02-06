@@ -56,7 +56,7 @@ section {
 h2 {
     color: #27ae60;
     margin-bottom: 1rem;
-    border-bottom: 3px solid #f39c12;
+    border-bottom: 3px solid #f39c12 !important;
     padding-bottom: 0.5rem;
     font-size: 1.8rem;
 }
@@ -125,13 +125,10 @@ footer a:hover {
 }
 
 #rufus-img {
-    width: 350px;
+    width: auto;
     height: auto;
-    float: right;
-    margin-top: -327px;
-    margin-right: -375px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    align-self: center;
+    text-align: center;  
 }
 
 #rufus-img-2 {
@@ -139,7 +136,7 @@ footer a:hover {
     height: 128px;
     float: right;
     margin-top: -160px;
-    margin-right: 450px;
+    margin-left: 450px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
