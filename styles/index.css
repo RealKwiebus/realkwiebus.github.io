@@ -12,18 +12,23 @@ body {
     background-color: #f4f4f4;
 }
 
+/* W3 Schools */
+
 @media only screen and (max-width: 769px) {
-  body {
-    background-color: lightblue;
-  }
+  img {
+    margin-top: auto;
+    margin-left: auto;
+  }    
 }
 
 
 header {
-    background-color: #333;
-    color: white;
+    background-image: url('.../images/background.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 1rem 2rem;
     text-align: center;
+    color:white;
 }
 
 header h1 {

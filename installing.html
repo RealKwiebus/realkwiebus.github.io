@@ -12,7 +12,7 @@
             <nav>
                 <a href="index.html">Home</a> |
                 <a href="distros.html">Distros</a> |
-                <a href="installing.html">Install</a>
+                <a href="installing.html">Install</a> |
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
@@ -84,15 +84,19 @@
                 </ol>
             </section>
 
-            <section>
+            <section id="step5">
                 <h2>Step 5: Configure Rufus settings</h2>
-                <p>The default settings work well for most people. In case you get errors make sure that these settings are correct</p>
+                <p></p>
+                <aside id="step5" style="float: right; margin: auto 0 10px 10px; margin-top: -107px; margin-right: -30px;">
+                    <img id="rufus-img" src="images/rufus.webp" alt="Rufus">
+                </aside>
                 <ul>
+                    <p>The default settings work well for most people. In case you get errors make sure that these settings are correct</p>
                     <li><strong>Partition scheme:</strong> Leave as "MBR" unless your computer uses UEFI exclusively (modern PCs often do). For UEFI, select "GPT".</li>
                     <li><strong>Target system:</strong> If unsure, choose "BIOS or UEFI".</li>
                     <li><strong>File system:</strong> Leave as "FAT32" for compatibility.</li>
                     <li><strong>Quick format:</strong> Checked by default. Uncheck for a more thorough format (slower but safer).</li>
-                    <img id="rufus-img" src="images/rufus.webp" alt="Rufus">
+
                 </ul>
             </section>
 
